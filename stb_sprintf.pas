@@ -400,7 +400,7 @@ var
           case VType of
             vtInteger: Exit(VInteger);
             vtExtended: Exit(VExtended^);
-            else Exit(0.0); // TODO NaN here? :)
+            else Exit(0.0);
           end;
         end;
       end;
@@ -1905,14 +1905,11 @@ begin
   d := value;
   STBSP__COPYFP(bits, d);
   expo := Int32((bits shr 52) and 2047);
-  // Write(bits, ' >> 63 = ');
   ng := Int32(UInt64(bits) shr UInt64(63));
-  // Writeln(ng);
   if ng <> 0 then
     d := -d;
 
   if expo = 2047 then begin // is nan or inf?
-    // Writeln('Processing NaN or Inf ', value);
     if (bits and ((UInt64(1) shl 52) - 1)) <> 0 then begin
       start^ := 'NaN';
       // FIXME for some reason 0.0/0.0 gives ng=1
@@ -1921,7 +1918,6 @@ begin
       start^ := 'Inf';
     decimal_pos^ := STBSP__SPECIAL;
     len^ := 3;
-    // Writeln('ng = ', ng);
     Exit(ng);
   end;
 

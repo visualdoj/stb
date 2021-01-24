@@ -157,7 +157,7 @@ begin
 
 {$IF __STDC_VERSION__ >= 199901}
    // hex floats
-  // CHECK('0x1.fedcbap+98', '%a', [0x1.fedcbap+98]); // TODO wut?
+  // CHECK('0x1.fedcbap+98', '%a', [0x1.fedcbap+98]); // TODO
   CHECK('0x1.999999999999a0p-4', '%.14a', [0.1]);
   // CHECK('0x1.0p-1022', '%.1a', [0x1.ffp-1023]); // TODO
  {$IF Defined(USE_STB)} // difference in default precision and x vs X for %A

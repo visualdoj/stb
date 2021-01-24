@@ -7,7 +7,8 @@ single-file public domain (or MIT licensed) libraries.
 
 library    | status | category | LoC | description
 --------------------- | ---- | -------- | --- | --------------------------------
-**[stb_sprintf.pas](stb_sprintf.pas)** | ✓1.09 | utility | ~2077 | fast `sprintf`, `snprintf`
+**[stb_sprintf.pas](stb_sprintf.pas)** | ✓1.09 | utility | 2090 | fast `sprintf`, `snprintf`
+**[stb_divide.pas](stb_divide.pas)** | ✓0.93 | math | 505 | more useful 32-bit modulus e.g. "euclidean divide"
 `stb_vorbis.pas` | - | audio | - | decode ogg vorbis files from file/memory to float/16-bit signed output
 `stb_image.pas` | - | graphics | - | image loading/decoding from file/memory: JPG, PNG, TGA, BMP, PSD, GIF, HDR, PIC
 `stb_truetype.pas` | - | graphics | - | parse, decode, and rasterize characters from truetype fonts
@@ -24,7 +25,6 @@ library    | status | category | LoC | description
 `stb_tilemap_editor.pas` | - | game&nbsp;dev | - | embeddable tilemap editor
 `stb_herringbone_wa...` | - | game&nbsp;dev | - | herringbone Wang tile map generator
 `stb_c_lexer.pas` | - | parsing | - | simplify writing parsers for C-like languages
-`stb_divide.pas` | - | math | - | more useful 32-bit modulus e.g. "euclidean divide"
 `stb_connected_comp...` | - | misc | - | incrementally compute reachability on grids
 `stb.h` | - | misc | - | helper functions for C, mostly redundant in C++; basically author's personal stuff
 `stb_leakcheck.h` | - | misc | - | quick-and-dirty malloc/free leak-checking
