@@ -1,0 +1,10 @@
+# 1. skip all first lines until empty line
+# 2. read W,H -- size of a sheet for 2DRP, or 0,0 for 2DSP
+# 3. read N -- number of rects
+# 4. read N lines with Wi,Hi -- sizes of each record
+
+256 256
+3
+32 32
+33 33
+34 34
