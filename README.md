@@ -7,14 +7,14 @@ single-file public domain (or MIT licensed) libraries.
 
 library    | status | category | LoC | description
 --------------------- | ---- | -------- | --- | --------------------------------
-**[stb_sprintf.pas](stb_sprintf.pas)** | ✓1.09 | utility | 2090 | fast `sprintf`, `snprintf`
 **[stb_divide.pas](stb_divide.pas)** | ✓0.93 | math | 505 | more useful 32-bit modulus e.g. "euclidean divide"
+**[stb_sprintf.pas](stb_sprintf.pas)** | ✓1.09 | utility | 2090 | fast `sprintf`, `snprintf`
+**[stb_rect_pack.pas](stb_rect_pack.pas)** | ✓1.00 | graphics | 672 | simple 2D rectangle packer with decent quality
 `stb_vorbis.pas` | - | audio | - | decode ogg vorbis files from file/memory to float/16-bit signed output
 `stb_image.pas` | - | graphics | - | image loading/decoding from file/memory: JPG, PNG, TGA, BMP, PSD, GIF, HDR, PIC
 `stb_truetype.pas` | - | graphics | - | parse, decode, and rasterize characters from truetype fonts
 `stb_image_write.pas` | - | graphics | - | image writing to disk: PNG, TGA, BMP
 `stb_image_resize.pas` | - | graphics | - | resize images larger/smaller with good quality
-`stb_rect_pack.pas` | - | graphics | - | simple 2D rectangle packer with decent quality
 `stb_ds.pas` | - | utility | - | typesafe dynamic array and hash tables for C, will compile in C++
 `stretchy_buffer.pas` | - | utility | - | typesafe dynamic array for C (i.e. approximation to vector<>), doesn't compile as C++
 `stb_textedit.pas` | - | user&nbsp;interface | - | guts of a text editor for games etc implementing them from scratch
